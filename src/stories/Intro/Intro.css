@@ -3,10 +3,21 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-top: 25vh;
 
-    animation: fadeInAnimation ease-in 2s;
+    animation: fadeInAnimation ease-out 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    justify-content: space-between;
+    height: 100%;
 }
 
 @keyframes fadeInAnimation {
@@ -17,5 +28,15 @@
     100% {
         opacity: 1;
         transform: translate(0%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro { 
+        margin-top: 5vh;
+    }
+
+    .side {
+        flex-direction: column;
     }
 }

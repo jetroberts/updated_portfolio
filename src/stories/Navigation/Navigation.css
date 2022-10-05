@@ -1,7 +1,6 @@
 .nav {
     padding: 1rem;
     background-color: #172B36;
-    width: max-content;
 }
 
 .nav > ul {
@@ -27,3 +26,15 @@
     padding: 3px;
 }
 
+@media screen and (max-width: 600px) {
+    .nav {
+        padding: 0.5em;
+    }
+    .nav > ul {
+        gap: 1rem;
+    }
+
+    .link {
+        font-size: 20px;
+    }
+}

@@ -2,7 +2,7 @@ import './Button.css'
 
 interface ButtonProps {
     label: string;
-    primary: boolean;
+    primary?: boolean;
     onClick?: () => void;
 }
 

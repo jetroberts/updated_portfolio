@@ -1,11 +1,14 @@
 .button {
-    padding: 0.75rem 1rem;
-    font-family: 'Inter', sans-serif;
+    max-height: 3em;
+    padding: 0.75rem 2rem;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
+    font-size: 16px;
+    text-align: center;
     border: 0;
     border-radius: 3em;
-    cursor: pointer;
-    display: inline-block;
+     display: inline-block;
+    transition: all 0.5s ease-out;
 }
 
 .button--primary {
@@ -24,6 +27,7 @@
 }
 
 .button--secondary:active {
-    background-color: hsl(147, 79%, 51%);
+    background-color: hsl(147, 79%, 40%);
     color: hsl(201, 40%, 10%);
+    transition: all 0.1s ease-out;
 }
