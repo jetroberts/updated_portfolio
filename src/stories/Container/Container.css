@@ -1,0 +1,5 @@
+.container {
+    max-width: 64rem;
+    width: 100%;
+    min-width: 16rem;
+}

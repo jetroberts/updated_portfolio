@@ -1,0 +1,18 @@
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-style: 'normal';
+    font-weight: 700;
+    font-size: 48px;
+    width: fit-content;
+    padding: 12px;
+}
+
+.logo--primary {
+    background-color: #172B36;
+    color: #4FEA96;
+}
+
+.logo--secondary {
+    background-color: #4FEA96;
+    color: #172B36;
+}

@@ -1,0 +1,29 @@
+.button {
+    padding: 0.75rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 3em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button--primary {
+    background-color: #172B36;
+    color: #4FEA96;
+}
+
+.button--primary:active {
+    background-color: hsl(201, 40%, 10%);
+    color: hsl(147, 79%, 57%);
+}
+
+.button--secondary {
+    background-color: #4FEA96;
+    color: #172B36;
+}
+
+.button--secondary:active {
+    background-color: hsl(147, 79%, 51%);
+    color: hsl(201, 40%, 10%);
+}
