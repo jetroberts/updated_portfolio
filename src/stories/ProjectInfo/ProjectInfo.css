@@ -1,0 +1,13 @@
+.projectinfo {
+    background-color: #172B36;
+    color: white;
+
+    padding: 2rem;
+
+    border-radius: 2rem;
+}
+
+.projectinfo > .border {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid hsl(147, 79%, 61%);
+}
