@@ -1,0 +1,35 @@
+.project {
+    font-family: 'Inter', sans-serif;
+    
+    padding: 1.5rem;
+
+    background-color: hsl(201, 40%, 20%);
+    color: white;
+
+    display: grid;
+    grid-template-rows: 4rem 1fr 3rem;
+
+    max-width: 16rem;
+    min-width: 12rem;
+    aspect-ratio: 2 / 3;
+
+    border-radius: 2rem;
+}
+
+.project > * {
+    margin: 0.5rem;
+}
+
+.project-title {
+    padding-bottom: 1rem;
+    grid-row: 1 / 2;
+    border-bottom: 1px solid white;
+}
+
+.project > p {
+    grid-row: 2 / 3;
+}
+
+.project > button {
+    grid-row: 3 / 4;
+}
