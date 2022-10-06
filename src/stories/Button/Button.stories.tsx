@@ -33,4 +33,11 @@ Size.args = {
     size: 'sm'
 }
 
+export const Margin = Template.bind({})
+Margin.args = {
+    label: 'More Info',
+    primary: true,
+    size: 'sm',
+    margin: 3
+}
 

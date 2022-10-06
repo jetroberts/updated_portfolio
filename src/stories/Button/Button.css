@@ -1,6 +1,5 @@
 .button {
     max-height: 3em;
-    margin: 3rem;
     padding: 0.75rem 2rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
@@ -48,4 +47,8 @@
     font-weight: 700;
     padding: 1rem 2.5rem;
     border-radius: 3.5rem;
+}
+
+.button--3m {
+    margin: 3rem;
 }
