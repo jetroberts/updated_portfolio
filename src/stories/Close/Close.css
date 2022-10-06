@@ -1,5 +1,30 @@
 .close {
+    width: 40px;
+    height: 40px;
     padding: 0; 
     margin: 0;
-    background-color: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.close::before, 
+.close::after {
+    content: '';
+    position: absolute;
+    background-color: #172B36;
+    top: 17px;
+    left: 4px;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.close::before {
+    transform: rotate(45deg);
+}
+
+.close::after {
+    transform: rotate(-45deg);
 }

@@ -1,11 +1,12 @@
+import "./Close.css"
+
 interface CloseProps {
-    label: string
     onClick?: () => void
 }
 
-const Close = ({ label, onClick }: CloseProps) => {
+const Close = ({ onClick }: CloseProps) => {
     return (
-        <button className="close" onClick={onClick}>{label}</button>
+        <button className="close" onClick={onClick}></button>
     )
 }
 

@@ -14,6 +14,4 @@ export default {
 const Template: ComponentStory<typeof Close> = (args) => <Close {...args} />
 
 export const Default = Template.bind({})
-Default.args = {
-    label: "Close",
-}
+Default.args = {}
