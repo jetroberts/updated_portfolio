@@ -11,7 +11,7 @@ const Intro = () => {
             <Heading text={"Full Stack Software Developer"} size={"md"} />
             <Heading text={"London based developer specialising in Go, React, and AWS"} size={"sm"} />
             </div>
-            <Button label={"Projects"} />
+            <Button label={"Next"} />
         </Container>
     )
 }

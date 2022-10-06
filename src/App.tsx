@@ -1,14 +1,14 @@
+import { Outlet } from 'react-router-dom';
+import { Layout } from './stories/Layout/Layout';
 import './App.css';
 import { Header } from './stories/Header/Header';
-import { Intro } from './stories/Intro/Intro';
-import { Layout } from './stories/Layout/Layout';
 
 function App() {
   return (
     <Layout >
-      <Header /> 
-      <Intro />
-    </Layout >
+      <Header />
+      <Outlet />
+    </Layout>
   );
 }
 

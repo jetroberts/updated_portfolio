@@ -9,15 +9,15 @@ const Header = ({}: HeaderProps) => {
     const navItems: NavigationItem[] = [
         {
             name: "Home",
-            link: "#"
+            link: ""
         },
         {
             name: "About",
-            link: "#"
+            link: "about"
         },
         {
             name: "Projects",
-            link: "#"
+            link: "projects"
         }
     ]
 

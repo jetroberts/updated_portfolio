@@ -2,8 +2,10 @@ import "./Heading.css"
 
 interface HeadingProps {
     text: string
-    size: string
+    size: Size
 }
+
+type Size = 'sm' | 'md' | 'lg'
 
 const Heading = ({ text, size }: HeadingProps) => {
     return (

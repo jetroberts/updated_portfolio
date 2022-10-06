@@ -1,4 +1,5 @@
 import "./Navigation.css"
+import { Link } from "react-router-dom"
 
 export interface NavigationItem {
   name: string,
@@ -16,7 +17,7 @@ const Navigation = ({ NavigationItems }: NavigationProps) => {
         {NavigationItems.map((nav) => {
           return (
             <li>
-              <a className={'link'} href={nav.link}>{nav.name}</a>
+              <Link className={'link'} to={nav.link}>{nav.name}</Link>
             </li>
           )
         })}
