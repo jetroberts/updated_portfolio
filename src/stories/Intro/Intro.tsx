@@ -7,9 +7,9 @@ const Intro = () => {
     return (
         <Container className={["intro", "side"].join(" ")}>
             <div className={"introText"}>
-            <Heading text={"Hi, I'm Josh"} size={"lg"} />
-            <Heading text={"Full Stack Software Developer"} size={"md"} />
-            <Heading text={"London based developer specialising in Go, React, and AWS"} size={"sm"} />
+                <Heading text={"Hi, I'm Josh"} size={"lg"} />
+                <Heading text={"Full Stack Software Developer"} size={"md"} />
+                <Heading text={"London based developer specialising in Go, React, and AWS"} size={"sm"} />
             </div>
             <Button label={"Next"} />
         </Container>
