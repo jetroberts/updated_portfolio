@@ -3,7 +3,7 @@
     
     padding: 1.5rem;
 
-    background-color: hsl(201, 40%, 20%);
+    background-color: hsl(201, 39%, 20%);
     color: white;
 
     display: grid;
@@ -11,7 +11,7 @@
 
     max-width: 16rem;
     min-width: 12rem;
-    aspect-ratio: 2 / 3;
+    max-height: 24rem;
 
     border-radius: 2rem;
 }
@@ -28,6 +28,17 @@
 
 .project > p {
     grid-row: 2 / 3;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.project > p::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(0deg, hsl(201, 39%, 20%), hsla(201, 39%, 20%, 0));
 }
 
 .project > button {
