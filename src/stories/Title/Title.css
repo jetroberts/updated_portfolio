@@ -1,0 +1,15 @@
+.title {
+    font-family: 'Inter', sans-serif;
+}
+
+.title-light { 
+    font-weight: 500;
+}
+
+.title-med { 
+    font-weight: 700;
+}
+
+.title-heavy { 
+    font-weight: 900;
+}
