@@ -11,7 +11,8 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 export const Primary = Template.bind({})
 Primary.args = {
     primary: true,
-    label: 'Primary Button'
+    label: 'Primary Button',
+    size: 'md',
 }
 
 export const Secondary = Template.bind({})
@@ -24,4 +25,12 @@ Projects.args = {
     label: 'Projects',
     primary: true,
 }
+
+export const Size = Template.bind({})
+Size.args = {
+    label: 'More Info',
+    primary: true,
+    size: 'sm'
+}
+
 
