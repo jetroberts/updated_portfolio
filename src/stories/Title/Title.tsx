@@ -3,9 +3,9 @@ import "./Title.css"
 type Weight = 'light' | 'med' | 'heavy'
 
 interface TitleProps {
-    children: React.ReactNode;
-    className?: string;
-    weight?: Weight;
+    children: React.ReactNode
+    className?: string
+    weight?: Weight
 }
 
 const Title = ({ children, className, weight }: TitleProps) => {
