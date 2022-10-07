@@ -8,17 +8,14 @@ interface ProjectInfoProps {
     open: boolean
     title: string
     date?: string
-    children: React.ReactNode
     close?: () => void
+    children: React.ReactNode
 }
 
 const ProjectInfo = ({ open, title, date, children, close}: ProjectInfoProps) => {
-    if(!open){
-        return <></>
-    }
-
+    const openClass = open ? "openInfo" : "closeInfo"
     return (
-        <div className="projectinfo">
+        <div className={["projectinfo", openClass].join(" ")}>
             <Close color={"white"} onClick={close}></Close>
             <Title className={"border"} weight={"light"}>{title}</Title>
             {children}
