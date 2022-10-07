@@ -28,3 +28,8 @@
 .close::after {
     transform: rotate(-45deg);
 }
+
+.close-white::before,
+.close::after {
+    background-color: white;
+}
