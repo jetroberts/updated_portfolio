@@ -1,6 +1,5 @@
-import { useState } from "react"
-import { Button } from "../Button/Button"
 import { Close } from "../Close/Close"
+import { Container } from "../Container/Container"
 import { Title } from "../Title/Title"
 import "./ProjectInfo.css"
 

@@ -2,7 +2,7 @@ import "./Container.css"
 
 interface ContainerProps { 
     children: React.ReactNode
-    className: string
+    className?: string
 }
 
 const Container = ({ children, className }: ContainerProps) => {

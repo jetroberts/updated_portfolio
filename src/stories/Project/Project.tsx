@@ -25,9 +25,11 @@ const Project = ({ title, content }: ProjectProps) => {
         }, 500)
     } 
 
+    const darkenBackground = state.loadAnimation ? "darken" : ""
+
     return (
         <div className="project">
-            <Title className={"project-title"} weight="light">{title}</Title>
+            <Title className={["project-title", darkenBackground].join(" ")} weight="light">{title}</Title>
             <p>{content}</p>
             <Button label={"More Info"} size={"sm"} onClick={onClick}/>
             {state.load ? <ProjectInfo title={title} close={close} open={state.loadAnimation}>{content}</ProjectInfo> : ""}
