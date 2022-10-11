@@ -6,7 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { LandingPage } from './stories/pages/LandingPage/LandingPage';
 import { Projects } from './stories/pages/Projects/Projects';
 import { About } from './stories/pages/About/About';
+import { ErrorPage } from './stories/pages/ErrorPage/ErrorPage';
 
+// TODO: Create an error page
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,9 +26,12 @@ const router = createBrowserRouter([
         path: "projects",
         element: <Projects />
       },
-    ]
+    ],
+    errorElement: <ErrorPage />
   },
 ])
+
+// TODO: Update the About section
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
