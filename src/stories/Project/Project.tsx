@@ -1,4 +1,4 @@
-import { useReducer, useRef, useState } from "react"
+import { useReducer } from "react"
 import { Button } from "../Button/Button"
 import { ProjectInfo } from "../ProjectInfo/ProjectInfo"
 import { Title } from "../Title/Title"
@@ -6,11 +6,11 @@ import "./Project.css"
 import { createInitialState, reducer } from "./Project.reducer"
 
 export interface ProjectProps {
-    title: string,
-    content: string
+    title: string
+    children?: React.ReactNode
 }
 
-const Project = ({ title, content }: ProjectProps) => {
+const Project = ({ title, children }: ProjectProps) => {
     const [state, dispatch] = useReducer(reducer, createInitialState())
 
     const onClick = () => {
@@ -30,9 +30,9 @@ const Project = ({ title, content }: ProjectProps) => {
     return (
         <div className="project">
             <Title className={["project-title", darkenBackground].join(" ")} weight="light">{title}</Title>
-            <p>{content}</p>
+            <p>{children}</p>
             <Button label={"More Info"} size={"sm"} onClick={onClick}/>
-            {state.load ? <ProjectInfo title={title} close={close} open={state.loadAnimation}>{content}</ProjectInfo> : ""}
+            {state.load ? <ProjectInfo title={title} close={close} open={state.loadAnimation}>{children}</ProjectInfo> : ""}
         </div>
     )
 }
