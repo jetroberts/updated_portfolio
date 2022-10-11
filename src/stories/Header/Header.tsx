@@ -3,9 +3,7 @@ import { Logo } from '../Logo/Logo'
 import { NavigationItem, Navigation } from '../Navigation/Navigation'
 import './Header.css'
 
-interface HeaderProps {}
-
-const Header = ({}: HeaderProps) => {
+const Header = () => {
     const navItems: NavigationItem[] = [
         {
             name: "Home",

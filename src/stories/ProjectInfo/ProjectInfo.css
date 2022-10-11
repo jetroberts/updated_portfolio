@@ -2,8 +2,9 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: fit-content;
+    max-height: 80%;
     max-width: 64rem;
     z-index: 1;
     transform: translate(-50%, -50%);
@@ -11,6 +12,7 @@
     color: white;
     padding: 2rem;
     border-radius: 2rem;
+    overflow-y: auto;
 }
 
 .openInfo {
@@ -28,6 +30,28 @@
 .projectinfo > .border {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid hsl(147, 79%, 61%);
+}
+
+.projectinfo > h2 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid hsl(147, 79%, 61%);
+}
+
+.projectinfo > ul {
+    list-style-type: square;
+    list-style: none;
+}
+
+.projectinfo > ul > li {
+    padding-top: 0.5rem;
+}
+
+.projectinfo > ul > li::before {
+    content: "\2022";
+    color:hsl(147, 79%, 61%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 @keyframes fadeIn {

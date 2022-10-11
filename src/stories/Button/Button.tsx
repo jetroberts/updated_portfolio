@@ -1,4 +1,3 @@
-import internal from 'stream';
 import './Button.css'
 
 type ButtonSize = 'sm' | 'md' | 'lg'

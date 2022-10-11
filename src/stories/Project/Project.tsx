@@ -23,13 +23,19 @@ const Project = ({ title, children }: ProjectProps) => {
         setTimeout(() => {
             dispatch({ type: "closeInfo"})
         }, 500)
-    } 
+    }
+
+    const closeOnBackground = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        if ((event.target as Element).id) {
+            close()
+        }
+    }
 
     const darkenBackground = state.loadAnimation ? "darken" : ""
 
     return (
-        <div className="project">
-            <Title className={["project-title", darkenBackground].join(" ")} weight="light">{title}</Title>
+        <div id="project" className={["project", darkenBackground].join(" ")} onClick={(e) => closeOnBackground(e)}>
+            <Title className={["project-title"].join(" ")} weight="light">{title}</Title>
             <p>{children}</p>
             <Button label={"More Info"} size={"sm"} onClick={onClick}/>
             {state.load ? <ProjectInfo title={title} close={close} open={state.loadAnimation}>{children}</ProjectInfo> : ""}
