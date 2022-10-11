@@ -8,7 +8,6 @@ import { Projects } from './stories/pages/Projects/Projects';
 import { About } from './stories/pages/About/About';
 import { ErrorPage } from './stories/pages/ErrorPage/ErrorPage';
 
-// TODO: Create an error page
 const router = createBrowserRouter([
   {
     path: "/",
